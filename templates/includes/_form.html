@@ -1,0 +1,45 @@
+<head>
+<link
+  href="{{url_for('static', filename='css/form-code.css')}}"
+  rel="stylesheet"
+  media="screen"
+/>
+</head>
+
+{% block content %}
+
+<div class="landing-form">
+<h1>Fale Conosco</h1>
+<form id="embedded-form">
+  <input type="text" id="name" name="name" placeholder="Nome" />
+  <input type="email" id="email" name="email" placeholder="Email" />
+  <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999" pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}"/>
+  <textarea name="comentario" id="comentario" placeholder="Comentário"></textarea>
+<input id="submit-btn" type="submit" value="Enviar" />
+</form>
+</div>
+
+{% endblock %}
+
+
+<script>
+  const form = document.getElementById('embedded-form');
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const inputFieldsValues = {
+      name : form.elements['name'].value,
+      email : form.elements['email'].value,
+      telefone : form.elements['telefone'].value,
+      comentario: form.elements['comentario'].value,
+    }
+
+    if(inputFieldsValues.name === '')
+    alert(`Nome não pode estar vazio!`)
+    else if (inputFieldsValues.email === '')
+    alert(`Email não pode estar vazio!`)
+    else if (inputFieldsValues.telefone === '')
+    alert(`Telefone não pode estar vazio!`)
+    
+  })
+</script>
