@@ -9,7 +9,7 @@
   }
 
   .section-one {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/capa.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/farol.jfif);
     background-size: cover;
     background-position: center;
     filter: brightness();
