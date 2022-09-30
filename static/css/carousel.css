@@ -98,14 +98,15 @@
     z-index: 1;
     transition: opacity 2s;
     -webkit-transition: opacity 2s;
+    display: flex;
+    align-items: flex-end;
   }
 
   .carousel__item div {
-    padding: 10px;
+    padding: 0px 40px 50px;
     opacity: 0.6;
     background-color: black;
     display: flex;
-
   }
 
   .carousel__item p {
