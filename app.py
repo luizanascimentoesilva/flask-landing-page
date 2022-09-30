@@ -16,7 +16,7 @@ db = SQLAlchemy(app)
 
 @app.route('/')
 def index():
-        return render_template('home.html')
+    return render_template('home.html')
 
 @app.route('/add_comment', methods=['POST'])
 def add_record():
