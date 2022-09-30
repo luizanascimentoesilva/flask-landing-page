@@ -25,10 +25,12 @@
   
   .carousel {
     width: 100%;
+    display: flex;
     position: relative;
     overflow: hidden;
   }
   .carousel > input[type=radio] {
+    display: flex;
     position: absolute;
     left: 0;
     opacity: 0;
@@ -97,6 +99,44 @@
     transition: opacity 2s;
     -webkit-transition: opacity 2s;
   }
+
+  .carousel__item div {
+    padding: 10px;
+    opacity: 0.6;
+    background-color: black;
+    display: flex;
+
+  }
+
+  .carousel__item p {
+    font-size: 80%;
+    align-items: flex-start;
+    color: #fff;
+    display: flex;
+    margin: 20px 0 !important;
+  }
+
+
+  .carousel__item:nth-child(1) {
+    background-image: url(//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG);
+  }
+
+  .carousel__item:nth-child(2) {
+    background-image: url(//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg);
+  }
+
+  .carousel__item:nth-child(3) {
+    background-image: url(//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg);
+  }
+
+  .carousel__item:nth-child(4) {
+    background-image: url(//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg);
+  }
+
+  .carousel__item:nth-child(5) {
+    background-image: url(//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg);
+  }
+
   .carousel__item img {
     width: 100%;
     vertical-align: middle;

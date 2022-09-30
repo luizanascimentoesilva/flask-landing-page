@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Kalam', cursive;
+    font-family: 'Montserrat', sans-serif;;
     font-size: 16px;
   }
-  
+
   .section-one {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/farol.jfif);
     background-size: cover;
@@ -108,6 +108,12 @@
   }
   
   .container-three {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container-three-content{
     display: flex;
     justify-content: center;
     width: 100%;
