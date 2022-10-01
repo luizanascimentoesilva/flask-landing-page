@@ -6,12 +6,12 @@ h1 {
 
 .landing-form {
     display: flex;
-    width: 65%;
+    width: 50%;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
     padding: 45px;
+    margin-bottom: 40px;
 }
 
 form {

@@ -1,3 +1,5 @@
+import datetime
+
 class UserComments(db.Model):
     _tablename_= 'userComments'
     id = db.Column(db.Integer, primary_key=True)
@@ -11,4 +13,6 @@ class UserComments(db.Model):
         self.name = name
         self.commentary = commentary
         self.email = email
+
+  
 
