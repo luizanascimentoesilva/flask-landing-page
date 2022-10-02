@@ -46,7 +46,9 @@
       const request = new XMLHttpRequest();
      request.open('POST', 'add_comment', true);
      request.send(formData);
-    }).then(console.log(response))
+    })
+
+    console.log(response);
   })
    
 </script>
